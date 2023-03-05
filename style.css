@@ -1,0 +1,71 @@
+p{
+    background-color: aqua;
+}
+#lastname{
+    font-weight: bold;
+}
+.good-friends{
+    background-color: green;
+}
+.bad-friends{
+    background-color: yellow;
+}
+*{
+    color: red;
+}
+p *{
+    font-size: 30px
+}
+h1, h3{
+    color: black;
+} 
+/*  
+    <p><em>My latest discoveries have led me to believe that <b> we are all animals :)</b></em></p>
+    <p>My latest discoveries have led me to believe that <b>we are all animals</b>  :)</p>
+*/
+p b{
+    background-color:chartreuse;
+}
+
+p>b{
+    background-color: darkorange;
+}
+
+ul+p{
+    background-color: bisque;
+    color: black;
+}
+ul+h3{
+    color: brown;
+}
+ul~p{
+    background-color:pink;
+}
+p[id]{
+    background-color: orange;
+}
+/*
+Bu şekilde de yapılabilir tabi
+#my-Address{
+    font-style: italic;
+}
+*/
+p[id="my-Address"]{
+    font-style: italic;
+}
+p[title~="beautiful"]{
+    font-family: 'Times New Roman', Times, serif;
+}
+p[id|=my]{
+    background-color: pink;
+}
+
+p[id^="m"]{
+    color: white;
+}
+li[class$="ends"]{
+    background-color: pink;
+}
+p[id*="my"]{
+    color: black;
+}
